@@ -1,9 +1,9 @@
-name: Feed the Snake 🐍
+name: Feed the Snake Randomly 🐍
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # Cada día a las 08:00 UTC (puedes cambiar la hora si quieres)
-  workflow_dispatch:   # Te permite lanzarlo manualmente cuando quieras
+    - cron: '0 8 * * *'  # Cada día a las 08:00 UTC
+  workflow_dispatch:
 
 jobs:
   commit:
@@ -12,11 +12,17 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Make a tiny commit to keep the snake happy 🐍
+      - name: Feed the snake randomly 1-3 times 🐍
         run: |
-          echo "Feeding the snake on $(date)" >> snake-log.txt
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add snake-log.txt
-          git commit -m "chore: feeding the snake 🐍"
+          NUM_COMMITS=$(( ( RANDOM % 3 ) + 1 ))
+          echo "Feeding the snake today with $NUM_COMMITS snacks..."
+          for i in $(seq 1 $NUM_COMMITS)
+          do
+            DATE=$(date +'%Y-%m-%d %H:%M:%S')
+            echo "$DATE: 🐍 snake got snack #$i" >> snake-log.txt
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add snake-log.txt
+            git commit -m "chore: feeding the snake snack #$i 🐍"
+          done
           git push
