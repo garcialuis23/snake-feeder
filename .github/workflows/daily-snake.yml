@@ -1,0 +1,22 @@
+name: Feed the Snake 🐍
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # Cada día a las 08:00 UTC (puedes cambiar la hora si quieres)
+  workflow_dispatch:   # Te permite lanzarlo manualmente cuando quieras
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Make a tiny commit to keep the snake happy 🐍
+        run: |
+          echo "Feeding the snake on $(date)" >> snake-log.txt
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add snake-log.txt
+          git commit -m "chore: feeding the snake 🐍"
+          git push
