@@ -1,38 +1,40 @@
 # 🐍 snake-feeder
 
-Welcome to **snake-feeder** – a highly sophisticated and very serious repository whose sole purpose is to **keep my GitHub snake alive and well-fed.**
+Welcome to **snake-feeder** – a highly scientific repository that exists **only to keep my GitHub contribution snake alive and well-fed.**
+
+---
 
 ## 🚨 Disclaimer  
-This repository exists purely for fun and vanity.  
-There is **no meaningful code** here, just daily commits to feed my contribution graph and make my snake 🐍 happy.
+This repository does **absolutely nothing useful**.  
+It's just a fun way to ensure my contribution snake stays happy and my contribution graph stays green.  
 
 ---
 
 ## 🎯 Purpose
-- Keep the 🟩 squares green.
-- Satisfy the hunger of the GitHub contribution snake.
-- Enjoy watching it wiggle through my profile.
+- Keep the 🟩 squares alive.
+- Give my GitHub Snake something to munch on every day.
+- Watch it crawl joyfully through my profile.
 
 ---
 
 ## 🔄 Daily Routine
-Every day, this repo receives a small commit:  
-> `chore: feeding the snake 🐍`
+Every day, the snake gets between **1 and 3 delicious snacks**.  
+Each snack is lovingly logged like this:
 
-Because even virtual snakes need consistent snacks.  
+> 2025-07-15 08:00:00: 🐍 snake got snack #1 <br>
+> 2025-07-15 08:00:02: 🐍 snake got snack #2
+
+## 📊 Contribution Snake
+My daily snake-feeding ritual helps keep this graph moving!
+
+![snake gif](https://raw.githubusercontent.com/garcialuis23/snake-feeder/output/github-contribution-grid-snake.svg)
+
+---
+
+## 🐍 Final Thoughts
+> Not all repositories need to be serious.  
+> Some exist **purely for the memes.**
 
 ---
 
-## 📊 Why?
-For **this** ⬇️  
-![Snake](https://github.com/platane/snk/raw/github-contribution-grid-snake/github-contribution-grid-snake.gif)
-
----
-
-## 🐍 Final words
-Remember:  
-Not all contributions need to be serious...  
-**Some are just for the memes.**
-
----
-🖤 *Thanks for visiting!*
+🖤 *Thanks for visiting. Please don't call PETA.* 🐍
