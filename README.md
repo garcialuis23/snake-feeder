@@ -27,8 +27,6 @@ Each snack is lovingly logged like this:
 ## 📊 Contribution Snake
 My daily snake-feeding ritual helps keep this graph moving!
 
-![snake gif](https://raw.githubusercontent.com/garcialuis23/snake-feeder/output/github-contribution-grid-snake.svg)
-
 ---
 
 ## 🐍 Final Thoughts
