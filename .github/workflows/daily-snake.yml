@@ -2,7 +2,7 @@ name: Feed the Snake Randomly 🐍
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # Cada día a las 08:00 UTC
+    - cron: '30 9 * * *'  # 09:30 UTC (10:30/11:30 hora española)
   workflow_dispatch:
 
 jobs:
@@ -20,8 +20,8 @@ jobs:
           do
             DATE=$(date +'%Y-%m-%d %H:%M:%S')
             echo "$DATE: 🐍 snake got snack #$i" >> snake-log.txt
-            git config --global user.name "github-actions[bot]"
-            git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config --global user.name "garcialuis23"
+            git config --global user.email "garciadiazluis23@gmail.com"
             git add snake-log.txt
             git commit -m "chore: feeding the snake snack #$i 🐍"
           done
