@@ -1,8 +1,8 @@
 name: Feed the Snake Randomly 🐍
 
 on:
-  schedule:
-    - cron: '30 9 * * *'  # 09:30 UTC (10:30/11:30 hora española)
+  # schedule:
+  #   - cron: '30 9 * * *'  # 09:30 UTC (10:30/11:30 hora española) - DISABLED
   workflow_dispatch:
 
 jobs:
